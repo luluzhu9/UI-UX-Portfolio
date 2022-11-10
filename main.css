@@ -1,0 +1,263 @@
+/* TODO: 
+[IN PROGRESS] Case study pages
+[X] Sidebar cutting out 
+[X] Sidebar resize issue 
+[X] Gallery text not sizing down
+[X] Link resume
+[IN PROGRESS] Zoom Case Study - simple and concise
+    [X] Make side bar and footer show up in all pages
+    [ ] Info, then big image under
+        [ ] Have shadows for image, have border radius
+        [ ] Cleanly separate by sections
+        - insert animations of prototypes (?)
+[ ] Create About page 
+
+[ ] Make sure website is fully responsive at end: 
+    [X] Fix hero resizing issue 
+    [X] Fix side bar resizing issue
+    [X] Footer coming up when resized 
+    [X] Build media query for mobile 
+    [ ] Create illustrator logo, possibly animate it rotating?
+    [ ] Have case studies float up on page open
+    [ ] Connect to domain
+    [ ] Change mouse to custom 
+    [ ] Tab icon is not showing up for some reason
+    [ ] Try using components (?)
+    [ ] Insert new resume in 
+
+[ ] Clean up code, organize by folders
+[X] Update resume
+[ ] In the far future, create gallery functionality
+*/
+
+body {
+    background-image: url('Background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    position: relative;
+    background-size: 100% 100%;
+    font-family: Orpheus;
+}
+
+/***** FOOTER *****/
+footer {
+    background: white;
+    padding: 1vw;
+    display: flex;
+    -ms-flex-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text {
+    font-size: 1.5vw;
+}
+
+.footer-text-2 {
+    font-size: 1.5vw;
+    margin-left: auto;
+}
+
+/***** SOCIAL MEDIA ICONS *****/
+.menu li { 
+    margin-right: 0;
+    list-style: none;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.menu a{
+    margin-right: 1vw;
+    
+}
+  
+.menu .fa {
+    font-size: 2vw;
+    color: black;
+    
+}
+  
+.menu .fa:hover {
+    color: #F2DDA6;
+    transition: color 0.3s ease-in;
+}  
+
+/***** SIDENAV *****/
+.sidenav {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 10px;
+    transform: translate(0%, -50%);
+    /*overflow-x: hidden;*/
+    padding: 8px 0;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 2.5vw;
+    color: black;
+    font-family: "Orpheus";
+    display: block;
+    font-weight: bold;
+}
+
+.sidenav .grow {
+    font-size: 2.5vw;
+}
+
+.sidenav .grow:hover {
+    transform: scale(1.2);
+    transition: 0.2s ease-in;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    max-width: 68.75vw;
+    margin: auto;
+    height: 15vw;
+}
+
+.hero img {
+    height: 20vw; 
+    width: 20vw;
+}
+
+.bio {
+    width: 60vw;
+    padding: 0.625vw;
+    border-radius: 6vw;
+    box-shadow: 0vw 2px 15px 2px var(--primary-shadow);
+}
+
+.bio p{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    line-height: var(--line-height);
+    padding: 0.3vw 0;
+    text-align: right;
+    font-family: "Orpheus";
+    font-size: 2vw;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.container-one {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 62.5%;
+    margin: 2vw;
+}
+
+.container-two {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 29.2%;
+    margin: 2vw;
+}
+
+.mockup {
+    opacity: 1;
+    display: block;
+    width: 100%; /* TODO: is this the issue? */
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    align-content: center;
+}
+
+.container-one:hover .mockup {
+    opacity: 0.3;
+}
+
+.container-one:hover .middle {
+    opacity: 1;
+}
+
+.container-two:hover .mockup {
+    opacity: 0.3;
+}
+
+.container-two:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    color: black;
+    font-size: 2vw;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.text-2 {
+    color: black;
+    font-size: 1.25vw;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+/* Mobile media queries */
+@media (max-width: 900px){
+    /*.gallery > .container-one {
+        max-width: none;
+    }*/
+
+    .container-one {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 58vw;
+        height: 42vw;
+        margin: 2vw;
+    }
+
+    .container-one .mockup {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1vw;
+        opacity: 1;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .container-two {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 58vw;
+        margin: 2vw;
+    }
+}
+  

@@ -1,0 +1,133 @@
+/* ZOOM TODOS - Put in content first, then style
+    [X] Put summary text in
+    [X] Create another image for hero 
+        [ ] In future, make it gif with windows opening and closing
+    [X] Add intro and problem
+        [X] Style this into two columns
+    [ ] Put all content down and redo images
+        [ ] Redo research charts
+*/
+
+body {
+    font-family: Orpheus;
+}
+
+h2 {
+    font-family: 'Trade Gothic LT Std', sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    margin-top: 3vw;
+}
+
+h4 {
+    font-size: 1.5vw;
+}
+
+p {
+    font-size: 1.4vw;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.info {
+    width: 70%;
+}
+
+.bullets {
+    width: 50%;
+    text-align: left;
+    margin-left: 10vw;
+    margin-top: 6.5vw;
+    line-height: 1.5vw;
+}
+
+.hero {
+    width: 70vw;
+    display: block;
+    margin: 2vw auto 2vw auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+/***** SIDEBAR *****/
+.sidenav {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 10px;
+    transform: translate(0%, -50%);
+    padding: 8px 0;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 2.5vw;
+    color: black;
+    font-family: "Orpheus";
+    display: block;
+    font-weight: bold;
+}
+
+.sidenav .grow {
+    font-size: 2.5vw;
+}
+
+.sidenav .grow:hover {
+    transform: scale(1.2);
+    transition: 0.2s ease-in;
+}
+
+/***** FOOTER *****/
+footer {
+    background: white;
+    padding: 1vw;
+    display: flex;
+    -ms-flex-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text {
+    font-size: 1.5vw;
+}
+
+.footer-text-2 {
+    font-size: 1.5vw;
+    margin-left: auto;
+}
+
+/***** SOCIAL MEDIA ICONS *****/
+.menu li { 
+    margin-right: 0;
+    list-style: none;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.menu a{
+    margin-right: 1vw;
+    
+}
+  
+.menu .fa {
+    font-size: 2vw;
+    color: black;
+    
+}
+  
+.menu .fa:hover {
+    color: #F2DDA6;
+    transition: color 0.3s ease-in;
+}  
