@@ -60,6 +60,31 @@ p {
     margin-right: 15vw;
 }
 
+.research {
+    width: 75vw;
+}
+
+.audit {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+}
+
+.personas {
+    margin-left: auto;
+    margin-right: auto;
+    width: 65vw;
+}
+
+.cite {
+    display: flex;
+    flex-direction: row;
+}
+
+.cite p{
+    font-size: 1vw;
+}
+
 /***** SIDEBAR *****/
 .sidenav {
     position: fixed;
