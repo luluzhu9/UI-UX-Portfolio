@@ -42,7 +42,8 @@ body {
 /***** FOOTER *****/
 footer {
     background: white;
-    padding: 1vw;
+    /*padding: 1vw;*/
+    /*padding: 0.05vw;*/
     display: flex;
     -ms-flex-align: center;
     justify-content: space-between;
@@ -52,6 +53,7 @@ footer {
 .footer-text {
     /*font-size: 1.5vw;*/
     font-size: 1.2vw;
+    margin-left: 1vw;
 }
 
 .footer-text-2 {
@@ -123,7 +125,11 @@ footer {
     gap: 5vw;
     /*max-width: 68.75vw;*/
     max-width: 55vw;
-    margin: auto;
+    /*margin: auto;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
     height: 15vw;
 }
 
@@ -167,8 +173,10 @@ footer {
     display: flex;
     justify-content: center;
     position: relative;
-    width: 62.5%;
-    margin: 2vw;
+    /*width: 62.5%;*/
+    /*margin: 2vw;*/
+    width: 60.5%;
+    margin: 1vw;
 }
 
 .container-two {
@@ -176,7 +184,8 @@ footer {
     justify-content: center;
     position: relative;
     width: 29.2%;
-    margin: 2vw;
+    /*margin: 2vw;*/
+    margin: 1vw;
 }
 
 .mockup {

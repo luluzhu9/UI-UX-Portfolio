@@ -98,15 +98,17 @@ p {
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 2.5vw;
+    /*font-size: 2.5vw;*/
+    font-size: 2vw;
     color: black;
     font-family: "Orpheus";
     display: block;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 .sidenav .grow {
-    font-size: 2.5vw;
+    /*font-size: 2.5vw;*/
+    font-size: 2vw;
 }
 
 .sidenav .grow:hover {
