@@ -43,6 +43,20 @@ p {
     font-size: 23px;
 }
 
+.link {
+    display: flex;
+    flex-direction: row;
+}
+
+.link p{
+    font-size: 23px;
+}
+
+.link a{
+    font-size: 23px;
+    color: #ab91f1;
+}
+
 /***** SIDEBAR *****/
 .sidenav {
     position: fixed;
