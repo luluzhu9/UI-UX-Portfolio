@@ -4,8 +4,8 @@
         [ ] In future, make it gif with windows opening and closing
     [X] Add intro and problem
         [X] Style this into two columns
-    [ ] Put all content down and redo images
-        [ ] Redo research charts
+    [IN PROGRESS] Put all content down and redo images
+        [X] Redo research charts
 */
 
 body {
@@ -85,6 +85,45 @@ p {
     font-size: 1vw;
 }
 
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ui-one {
+    width: 15vw;
+    margin-right: 3vw;
+}
+.ui-two {
+    width: 15vw;
+    margin-left: 3vw;
+}
+
+.ux-student {
+    margin-left: auto;
+    margin-right: auto;
+    width: 65vw;
+}
+
+.ux-teacher {
+    margin-left: auto;
+    margin-right: auto;
+    width: 45vw; 
+}
+
+.final {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1vw;
+    width: 50vw;
+    border: 0.05vw solid black;
+}
+
+.moving-forward  li {
+    font-size: 1.4vw;
+}
+
 /***** SIDEBAR *****/
 .sidenav {
     position: fixed;
@@ -119,7 +158,8 @@ p {
 /***** FOOTER *****/
 footer {
     background: white;
-    padding: 1vw;
+    /*padding: 1vw;*/
+    /*padding: 0.05vw;*/
     display: flex;
     -ms-flex-align: center;
     justify-content: space-between;
@@ -127,11 +167,14 @@ footer {
 }
 
 .footer-text {
-    font-size: 1.5vw;
+    /*font-size: 1.5vw;*/
+    font-size: 1.2vw;
+    margin-left: 1vw;
 }
 
 .footer-text-2 {
-    font-size: 1.5vw;
+    /*font-size: 1.5vw;*/
+    font-size: 1.2vw;
     margin-left: auto;
 }
 
