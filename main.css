@@ -44,7 +44,7 @@ h2 {
     font-weight: bold;
     font-size: 2.5vw;
     margin-top: 2vw;
-    text-align: right;
+    text-align: left;
     color: #9ba7f2;
 }
 
@@ -135,9 +135,9 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5vw;
+    gap: 3vw;
     /*max-width: 68.75vw;*/
-    max-width: 55vw;
+    max-width: 60vw;
     /*margin: auto;*/
     margin-left: auto;
     margin-right: auto;
@@ -170,7 +170,7 @@ footer {
 
     line-height: var(--line-height);
     padding: 0.3vw 0;
-    text-align: right;
+    text-align: left; /* HERE */
     font-family: "Orpheus";
     /*font-size: 2vw;*/
     font-size: 1.5vw;
@@ -206,10 +206,11 @@ footer {
 .mockup {
     opacity: 1;
     display: block;
-    width: 100%; /* TODO: is this the issue? */
+    width: 100%; 
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
+    border-radius: 0.5vw;
 }
 
 .middle {
@@ -278,7 +279,6 @@ footer {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 1vw;
         opacity: 1;
         transition: .5s ease;
         backface-visibility: hidden;
