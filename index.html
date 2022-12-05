@@ -11,6 +11,11 @@
         <title>Lulu Zhu</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link rel="icon" type="image/x-icon" href="Untitled_Artwork.png?v=1.0">
         <script src="https://kit.fontawesome.com/c3c0c43fb5.js" crossorigin="anonymous"></script>
@@ -22,21 +27,34 @@
     </head>
     <body>
         <header>
-            <div class="hero">
-                <img
-                    src="Cube.gif"
-                    loading="lazy"
-                    class="hero-img"
-                />
-
-                <div class="bio animate__animated animate__shakeX">
-                    <h2>LULU ZHU</h2>
-                    <p class="bio-text">
-                        Interdisciplinary front end engineer with a background in UI/UX, research, and design.
-                    </p>
+            <nav>
+                <div class="hamburger-container">
+                    <input id="responsive-menu" type="checkbox">
+                    <label for="responsive-menu"><span id="menu-icon"></span></label>
+                    <div id="overlay"></div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="Lulu_Zhu_2022_Resume.pdf" target="_blank">Resume</a></li>
+                    </ul>
                 </div>
-            </div>
+            </nav>
         </header>
+
+        <div class="hero">
+            <img
+                src="Cube.gif"
+                loading="lazy"
+                class="hero-img"
+            />
+
+            <div class="bio animate__animated animate__shakeX">
+                <h2>LULU ZHU</h2>
+                <p class="bio-text">
+                    Interdisciplinary front end engineer with a background in UI/UX, research, and design.
+                </p>
+            </div>
+        </div>
 
         <!-- Floating side bar -->
         <div class="sidenav">

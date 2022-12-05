@@ -5,19 +5,14 @@
 [X] Gallery text not sizing down
 [X] Link resume
 [IN PROGRESS] Zoom Case Study - simple and concise
-    [X] Make side bar and footer show up in all pages
-    [ ] Info, then big image under
-        [ ] Have shadows for image, have border radius
-        [ ] Cleanly separate by sections
-        - insert animations of prototypes (?)
-[ ] Create About page 
+[X] Create About page 
 
 [ ] Make sure website is fully responsive at end: 
     [X] Fix hero resizing issue 
     [X] Fix side bar resizing issue
     [X] Footer coming up when resized 
     [X] Build media query for mobile 
-    [ ] Create illustrator logo, possibly animate it rotating?
+    [X] Create illustrator logo, possibly animate it rotating?
     [ ] Have case studies float up on page open
     [ ] Connect to domain
     [ ] Change mouse to custom 
@@ -47,10 +42,6 @@ h2 {
     text-align: left;
     color: #9ba7f2;
 }
-
-/*.column {
-    flex-direction: column;
-}*/
 
 /***** FOOTER *****/
 footer {
@@ -113,7 +104,6 @@ footer {
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    /*font-size: 2.5vw;*/
     font-size: 2vw;
     color: black;
     font-family: "Orpheus";
@@ -122,7 +112,6 @@ footer {
 }
 
 .sidenav .grow {
-    /*font-size: 2.5vw;*/
     font-size: 2vw;
 }
 
@@ -136,9 +125,8 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 3vw;
-    /*max-width: 68.75vw;*/
     max-width: 60vw;
-    /*margin: auto;*/
+
     margin-left: auto;
     margin-right: auto;
     margin-top: 3vw;
@@ -163,16 +151,15 @@ footer {
 }
 
 .bio p{
-    overflow: hidden;
+    /*overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: vertical;*/
 
     line-height: var(--line-height);
     padding: 0.3vw 0;
     text-align: left; /* HERE */
     font-family: "Orpheus";
-    /*font-size: 2vw;*/
     font-size: 1.5vw;
 }
 
@@ -188,9 +175,8 @@ footer {
     display: flex;
     justify-content: center;
     position: relative;
-    /*width: 62.5%;*/
-    /*margin: 2vw;*/
     width: 60.5%;
+
     margin: 1vw;
 }
 
@@ -199,7 +185,6 @@ footer {
     justify-content: center;
     position: relative;
     width: 29.2%;
-    /*margin: 2vw;*/
     margin: 1vw;
 }
 
@@ -260,18 +245,90 @@ footer {
     height: 0;
 }
 
+/***** Hidden hamburger menu *****/
+nav {
+    display: none;
+}
+
+nav input {
+    display: none;
+}
+
+nav label {
+    display: none;
+}
+
+#menu-icon,
+#menu-icon:before,
+#menu-icon:after {
+    display: none;
+}
+
+#menu-icon {
+    display: none;
+}
+
+nav label #menu-icon {
+    display: none;
+}
+
+#menu-icon:before,
+#menu-icon:after {
+    display: none;
+}
+
+#menu-icon:before {
+    display: none;
+}
+
+#menu-icon:after {
+    display: none;
+}
+
+/* Close Icon */
+nav input[type=checkbox]:checked + label #menu-icon {
+    display: none;
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:before {
+    display: none;
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:after {
+    display: none;
+}
+
+nav input:checked ~ #overlay {
+    display: none;
+}
+
+nav ul {
+    display: none;
+}
+
+nav input:checked ~ ul {
+    display: none;
+}
+
+nav ul > li {
+    display: none;
+}
+
+nav ul a {
+    display: none;
+}
+
+
 /* Mobile media queries */
-@media (max-width: 900px){
-    /*.gallery > .container-one {
-        max-width: none;
-    }*/
+@media (max-width: 988px){
 
     .container-one {
         display: flex;
         justify-content: center;
         position: relative;
-        width: 58vw;
-        height: 42vw;
+        width: 80vw;
+        /*height: 42vw;*/
+        height: 56vw; /*TODO: MAKE SURE HEIGHT IS THE SAME*/
         margin: 2vw;
     }
 
@@ -288,8 +345,186 @@ footer {
         display: flex;
         justify-content: center;
         position: relative;
-        width: 58vw;
+        width: 80vw;
         margin: 2vw;
     }
+
+    /***** HAMBURGER MENU *****/
+    nav {
+        display: block;
+        color: #1d1f20;
+        left: 0;
+        position: relative;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    /*** INPUT ***/
+    nav input {
+        display: block;
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    /*** LABEL ***/
+    nav label {
+        display: block;
+        cursor: pointer;
+        display: block;
+        font: 2em/1 'Oswald', sans-serif;
+        padding: 0.5em;
+    }*
+
+    /* Hamburger Icon */
+    #menu-icon,
+    #menu-icon:before,
+    #menu-icon:after {
+        display: block;
+        background: #9ba7f2;
+        border-radius: 0.05em;
+        height: 0.2em;
+        transition: all 0.2s ease-in-out;
+        width: 100%;
+    }
+
+    #menu-icon {
+        display: block;
+        display: inline-block;
+        margin: 1em 0;
+
+        max-width: 1em;
+        position: relative;
+    }
+
+    nav label #menu-icon {
+        display: block;
+        float: right;
+    }
+
+    #menu-icon:before,
+    #menu-icon:after {
+        display: block;
+        content: '';
+        left: 0;
+        position: absolute;
+    }
+
+    #menu-icon:before {
+        display: block;
+        top: -0.4em;
+    }
+
+    #menu-icon:after {
+        display: block;
+        bottom: -0.4em;
+    }
+
+    /* Close Icon */
+    nav input[type=checkbox]:checked + label #menu-icon {
+        display: block;
+        background: transparent;
+    }
+
+    nav input[type=checkbox]:checked + label #menu-icon:before {
+        display: block;
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    nav input[type=checkbox]:checked + label #menu-icon:after {
+        display: block;
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+
+
+    /*** MENU ***/
+    /* Overlay */
+    nav input:checked ~ #overlay {
+        display: block;
+        background: white;
+        bottom: 0;
+        left: 0;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100vw;
+        z-index: -1;
+    }
+
+    /* List */
+    nav ul {
+        display: block;
+        text-align: center;
+        font-size: 32px;
+        list-style: none;
+        margin: 0;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        padding: 0;
+
+        position: fixed;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    nav input:checked ~ ul {
+        display: block;
+        margin: 1em;
+        max-height: inherit;
+        opacity: 1;
+    }
+
+    nav ul > li {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    nav ul a {
+        display: block;
+        color: black!important;
+        text-decoration: none;
+    }
+
+    .sidenav {
+        display: none;
+    }
+
+    .bio p{
+        line-height: var(--line-height);
+        padding: 0.3vw 0;
+        text-align: left; /* HERE */
+        font-family: "Orpheus";
+        /*font-size: 1.5vw;*/
+        font-size: 20px;
+    }
+
+    h2 {
+        font-family: 'Trade Gothic LT Std', sans-serif;
+        font-weight: bold;
+        font-size: 35px;
+        margin-top: 2vw;
+        text-align: left;
+        color: #9ba7f2;
+    }
+
+    .text {
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    
+    .text-2 {
+        color: black;
+        font-size: 15px;
+        padding-left: 10px;
+        padding-top: 5px;
+    }
 }
-  

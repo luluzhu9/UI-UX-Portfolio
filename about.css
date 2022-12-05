@@ -135,12 +135,232 @@ footer {
     transition: color 0.3s ease-in;
 }  
 
-@media (max-width: 900px){
+/***** Hidden hamburger menu *****/
+nav {
+    display: none;
+}
+
+nav input {
+    display: none;
+}
+
+nav label {
+    display: none;
+}
+
+#menu-icon,
+#menu-icon:before,
+#menu-icon:after {
+    display: none;
+}
+
+#menu-icon {
+    display: none;
+}
+
+nav label #menu-icon {
+    display: none;
+}
+
+#menu-icon:before,
+#menu-icon:after {
+    display: none;
+}
+
+#menu-icon:before {
+    display: none;
+}
+
+#menu-icon:after {
+    display: none;
+}
+
+/* Close Icon */
+nav input[type=checkbox]:checked + label #menu-icon {
+    display: none;
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:before {
+    display: none;
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:after {
+    display: none;
+}
+
+nav input:checked ~ #overlay {
+    display: none;
+}
+
+nav ul {
+    display: none;
+}
+
+nav input:checked ~ ul {
+    display: none;
+}
+
+nav ul > li {
+    display: none;
+}
+
+nav ul a {
+    display: none;
+}
+
+@media (max-width: 988px){
     .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-left: 10vw;
         margin-right: 10vw;
+    }
+
+    /***** HAMBURGER MENU *****/
+    nav {
+        display: block;
+        color: #1d1f20;
+        left: 0;
+        position: relative;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    /*** INPUT ***/
+    nav input {
+        display: block;
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    /*** LABEL ***/
+    nav label {
+        display: block;
+        cursor: pointer;
+        display: block;
+        font: 2em/1 'Oswald', sans-serif;
+        padding: 0.5em;
+    }*
+
+    /* Hamburger Icon */
+    #menu-icon,
+    #menu-icon:before,
+    #menu-icon:after {
+        display: block;
+        background: #9ba7f2;
+        border-radius: 0.05em;
+        height: 0.2em;
+        transition: all 0.2s ease-in-out;
+        width: 100%;
+    }
+
+    #menu-icon {
+        display: block;
+        display: inline-block;
+        margin: 1em 0;
+
+        max-width: 1em;
+        position: relative;
+    }
+
+    nav label #menu-icon {
+        display: block;
+        float: right;
+    }
+
+    #menu-icon:before,
+    #menu-icon:after {
+        display: block;
+        content: '';
+        left: 0;
+        position: absolute;
+    }
+
+    #menu-icon:before {
+        display: block;
+        top: -0.4em;
+    }
+
+    #menu-icon:after {
+        display: block;
+        bottom: -0.4em;
+    }
+
+    /* Close Icon */
+    nav input[type=checkbox]:checked + label #menu-icon {
+        display: block;
+        background: transparent;
+    }
+
+    nav input[type=checkbox]:checked + label #menu-icon:before {
+        display: block;
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    nav input[type=checkbox]:checked + label #menu-icon:after {
+        display: block;
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+
+
+    /*** MENU ***/
+    /* Overlay */
+    nav input:checked ~ #overlay {
+        display: block;
+        background: white;
+        bottom: 0;
+        left: 0;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100vw;
+        z-index: -1;
+    }
+
+    /* List */
+    nav ul {
+        display: block;
+        text-align: center;
+        font-size: 32px;
+        list-style: none;
+        margin: 0;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        padding: 0;
+
+        position: fixed;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    nav input:checked ~ ul {
+        display: block;
+        margin: 1em;
+        max-height: inherit;
+        opacity: 1;
+    }
+
+    nav ul > li {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    nav ul a {
+        display: block;
+        color: black!important;
+        text-decoration: none;
+    }
+
+    .sidenav {
+        display: none;
     }
 }
