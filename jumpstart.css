@@ -457,4 +457,42 @@ nav ul a {
     .sidenav {
         display: none;
     }
+
+    /***** Photo resizing *****/
+    .comp-analysis-1 {
+        width: 75vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .comp-analysis-2 {
+        width: 75vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .comp-analysis-3 {
+        width: 75vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .comp-text {
+        display: none;
+    }
+
+    .jumpstart-ui-1 {
+        width: 75vw;
+        margin-top: 2vw;
+    }
+    
+    .jumpstart-ui-2 {
+        width: 75vw;
+        margin-top: 2vw;
+    }
+    
+    .jumpstart-ui-3 {
+        width: 75vw;
+        margin-top: 2vw;
+    }
 }

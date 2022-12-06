@@ -1,0 +1,372 @@
+body {
+    font-family: Orpheus;
+}
+
+h2 {
+    font-family: 'Trade Gothic LT Std', sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    margin-top: 1vw;
+}
+
+h4 {
+    font-size: 1.5vw;
+}
+
+p {
+    font-size: 1.4vw;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding-bottom: 5vw;
+}
+
+.right {
+    text-align: right;
+    margin-left: auto;
+    max-width: 85%;
+}
+
+.ksdt-1 {
+    margin-top: 5vw;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vw;
+}
+
+.popup {
+    max-width: 35vw;
+}
+
+.sticker {
+    max-width: 35vw;
+}
+
+.shirt {
+    margin-top: 5vw;
+}
+
+/***** SIDEBAR *****/
+.sidenav {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 10px;
+    transform: translate(0%, -50%);
+    padding: 8px 0;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 2vw;
+    color: black;
+    font-family: "Orpheus";
+    display: block;
+}
+
+.sidenav .grow {
+    font-size: 2vw;
+}
+
+.sidenav .grow:hover {
+    transform: scale(1.2);
+    transition: 0.2s ease-in;
+}
+
+/***** FOOTER *****/
+footer {
+    background: white;
+    display: flex;
+    -ms-flex-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text {
+    font-size: 1.2vw;
+    margin-left: 1vw;
+}
+
+.footer-text-2 {
+    font-size: 1.2vw;
+    margin-left: auto;
+}
+
+/***** SOCIAL MEDIA ICONS *****/
+.menu li { 
+    margin-right: 0;
+    list-style: none;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.menu a{
+    margin-right: 1vw;
+    
+}
+  
+.menu .fa {
+    font-size: 2vw;
+    color: black;
+    
+}
+  
+.menu .fa:hover {
+    color: #F2DDA6;
+    transition: color 0.3s ease-in;
+}  
+
+/***** Hidden hamburger menu *****/
+nav {
+    display: none;
+}
+
+nav input {
+    display: none;
+}
+
+nav label {
+    display: none;
+}
+
+#menu-icon,
+#menu-icon:before,
+#menu-icon:after {
+    display: none;
+}
+
+#menu-icon {
+    display: none;
+}
+
+nav label #menu-icon {
+    display: none;
+}
+
+#menu-icon:before,
+#menu-icon:after {
+    display: none;
+}
+
+#menu-icon:before {
+    display: none;
+}
+
+#menu-icon:after {
+    display: none;
+}
+
+/* Close Icon */
+nav input[type=checkbox]:checked + label #menu-icon {
+    display: none;
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:before {
+    display: none;
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:after {
+    display: none;
+}
+
+nav input:checked ~ #overlay {
+    display: none;
+}
+
+nav ul {
+    display: none;
+}
+
+nav input:checked ~ ul {
+    display: none;
+}
+
+nav ul > li {
+    display: none;
+}
+
+nav ul a {
+    display: none;
+}
+
+
+/***** MOBILE RESIZING *****/
+@media (max-width: 988px){
+    /***** TEXT RESIZING *****/
+    h2 {
+        font-family: 'Trade Gothic LT Std', sans-serif;
+        font-weight: bold;
+        font-size: 33px;
+        margin-top: 3vw;
+    }
+
+    p {
+        font-size: 23px;
+    }
+
+    /***** HAMBURGER MENU *****/
+    nav {
+        display: block;
+        color: #1d1f20;
+        left: 0;
+        position: relative;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    /*** INPUT ***/
+    nav input {
+        display: block;
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    /*** LABEL ***/
+    nav label {
+        display: block;
+        cursor: pointer;
+        display: block;
+        font: 2em/1 'Oswald', sans-serif;
+        padding: 0.5em;
+    }*
+
+    /* Hamburger Icon */
+    #menu-icon,
+    #menu-icon:before,
+    #menu-icon:after {
+        display: block;
+        background: #9ba7f2;
+        border-radius: 0.05em;
+        height: 0.2em;
+        transition: all 0.2s ease-in-out;
+        width: 100%;
+    }
+
+    #menu-icon {
+        display: block;
+        display: inline-block;
+        margin: 1em 0;
+
+        max-width: 1em;
+        position: relative;
+    }
+
+    nav label #menu-icon {
+        display: block;
+        float: right;
+    }
+
+    #menu-icon:before,
+    #menu-icon:after {
+        display: block;
+        content: '';
+        left: 0;
+        position: absolute;
+    }
+
+    #menu-icon:before {
+        display: block;
+        top: -0.4em;
+    }
+
+    #menu-icon:after {
+        display: block;
+        bottom: -0.4em;
+    }
+
+    /* Close Icon */
+    nav input[type=checkbox]:checked + label #menu-icon {
+        display: block;
+        background: transparent;
+    }
+
+    nav input[type=checkbox]:checked + label #menu-icon:before {
+        display: block;
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    nav input[type=checkbox]:checked + label #menu-icon:after {
+        display: block;
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+
+
+    /*** MENU ***/
+    /* Overlay */
+    nav input:checked ~ #overlay {
+        display: block;
+        background: white;
+        bottom: 0;
+        left: 0;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100vw;
+        z-index: -1;
+    }
+
+    /* List */
+    nav ul {
+        display: block;
+        text-align: center;
+        font-size: 32px;
+        list-style: none;
+        margin: 0;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        padding: 0;
+
+        position: fixed;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    nav input:checked ~ ul {
+        display: block;
+        margin: 1em;
+        max-height: inherit;
+        opacity: 1;
+    }
+
+    nav ul > li {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    nav ul a {
+        display: block;
+        color: black!important;
+        text-decoration: none;
+    }
+
+    .sidenav {
+        display: none;
+    }
+
+}
