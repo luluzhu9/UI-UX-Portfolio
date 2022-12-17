@@ -319,14 +319,35 @@ nav ul a {
 
 /* Mobile media queries */
 @media (max-width: 988px){
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3vw;
+        max-width: 80vw;
+    
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15vw;
+        margin-bottom: 5vw;
+        height: 15vw;
+    }
+
+    .hero img {
+        height: 20vw;
+        width: 20vw;
+    
+        image-rendering: pixelated;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: crisp-edges;
+    }
 
     .container-one {
         display: flex;
         justify-content: center;
         position: relative;
         width: 80vw;
-        /*height: 42vw;*/
-        height: 56vw; /*TODO: MAKE SURE HEIGHT IS THE SAME*/
+        height: 56vw; 
         margin: 2vw;
     }
 
@@ -437,7 +458,6 @@ nav ul a {
         transform: rotate(45deg);
     }
 
-
     /*** MENU ***/
     /* Overlay */
     nav input:checked ~ #overlay {
@@ -467,7 +487,7 @@ nav ul a {
 
         position: fixed;
         top: 45%;
-        left: 50%;
+        left: 45%;
         transform: translate(-50%, -50%);
 
     }
@@ -497,9 +517,8 @@ nav ul a {
     .bio p{
         line-height: var(--line-height);
         padding: 0.3vw 0;
-        text-align: left; /* HERE */
+        text-align: left; 
         font-family: "Orpheus";
-        /*font-size: 1.5vw;*/
         font-size: 20px;
     }
 

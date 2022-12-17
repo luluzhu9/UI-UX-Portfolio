@@ -1,3 +1,12 @@
+@keyframes Slide_Up{
+    0%{
+        transform: translateY(250px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
 body {
     font-family: Orpheus;
 }
@@ -5,14 +14,11 @@ body {
 h2 {
     font-family: 'Trade Gothic LT Std', sans-serif;
     font-weight: bold;
-    /*font-size: 2vw;*/
     font-size: 35px;
 }
 
 p {
-    /*font-size: 1.4vw;*/
     font-size: 23px;
-    /*font-size: 1.3vw;*/
 }
 
 .container {
@@ -21,10 +27,10 @@ p {
     justify-content: center;
     margin-left: 10vw;
     margin-right: 10vw;
+    animation: Slide_Up 1.5s ease;
 }
 
 .about-pic{
-    /*width: 30vw;*/
     margin-top: 7vw;
     margin-right: 3vw;
 
@@ -213,8 +219,16 @@ nav ul a {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 10vw;
-        margin-right: 10vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-pic{
+        margin-top: 20vw;
+    
+        object-fit: cover;
+        width: 100%;
+        height: 700px;
     }
 
     /***** HAMBURGER MENU *****/
@@ -222,7 +236,8 @@ nav ul a {
         display: block;
         color: #1d1f20;
         left: 0;
-        position: relative;
+        /*position: relative;*/
+        position: absolute;
         top: 0;
         width: 100%;
         z-index: 9999;
@@ -337,9 +352,8 @@ nav ul a {
 
         position: fixed;
         top: 45%;
-        left: 50%;
+        left: 45%;
         transform: translate(-50%, -50%);
-
     }
 
     nav input:checked ~ ul {
