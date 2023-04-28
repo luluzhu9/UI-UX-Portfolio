@@ -1,29 +1,3 @@
-/* TODO: 
-[IN PROGRESS] Case study pages
-[X] Sidebar cutting out 
-[X] Sidebar resize issue 
-[X] Gallery text not sizing down
-[X] Link resume
-[IN PROGRESS] Zoom Case Study - simple and concise
-[X] Create About page 
-
-[ ] Make sure website is fully responsive at end: 
-    [X] Fix hero resizing issue 
-    [X] Fix side bar resizing issue
-    [X] Footer coming up when resized 
-    [X] Build media query for mobile 
-    [X] Create illustrator logo, possibly animate it rotating?
-    [ ] Have case studies float up on page open
-    [X] Connect to domain
-    [?] Change mouse to custom 
-    [X] Tab icon is not showing up for some reason
-    [X] Insert new resume in 
-
-[X] Clean up code, organize by folders
-[X] Update resume
-[ ] In the far future, create gallery functionality
-*/
-
 @keyframes Slide_Up{
     0%{
         transform: translateY(250px);
