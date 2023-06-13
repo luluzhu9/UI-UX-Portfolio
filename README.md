@@ -1,4 +1,4 @@
-## Live site: https://luluzhu.com/
+## 🌱 Live site: https://luluzhu.com/
 
 ## About
 I redesigned my UI/UX portfolio website from the ground up starting with UI sketches and [high fidelity prototypes](https://www.figma.com/proto/SCd7qhqcjM2jAcmCGtmCMK/Portfolio-Redesign?node-id=1-5&starting-point-node-id=1%3A5&scaling=scale-down) on Figma, and implemented and deployed the lightweight web application using HTML5, CSS (Flexbox), and Bootstrap.
