@@ -14,14 +14,12 @@ body {
 h2 {
     font-family: 'Trade Gothic LT Std', sans-serif;
     font-weight: bold;
-    font-size: 2vw;
-    /*font-size: 33px;*/
+    font-size: 27px;
     margin-top: 3vw;
 }
 
 p {
-    font-size: 1.4vw;
-    /*font-size: 23px;*/
+    font-size: 19px;
 }
 
 .intro {
@@ -43,7 +41,6 @@ p {
     margin-left: 10vw;
     margin-top: 6.5vw;
     line-height: 1.5vw;
-    /*line-height: 25px;*/
 }
 
 .hero {
@@ -138,16 +135,13 @@ p {
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    /*font-size: 2.5vw;*/
     font-size: 2vw;
     color: black;
     font-family: "Orpheus";
     display: block;
-    /*font-weight: bold;*/
 }
 
 .sidenav .grow {
-    /*font-size: 2.5vw;*/
     font-size: 2vw;
 }
 
@@ -159,8 +153,6 @@ p {
 /***** FOOTER *****/
 footer {
     background: white;
-    /*padding: 1vw;*/
-    /*padding: 0.05vw;*/
     display: flex;
     -ms-flex-align: center;
     justify-content: space-between;
@@ -168,14 +160,12 @@ footer {
 }
 
 .footer-text {
-    /*font-size: 1.5vw;*/
-    font-size: 1.2vw;
+    font-size: 13px;
     margin-left: 1vw;
 }
 
 .footer-text-2 {
-    /*font-size: 1.5vw;*/
-    font-size: 1.2vw;
+    font-size: 13px;
     margin-left: auto;
 }
 
@@ -193,7 +183,7 @@ footer {
 }
   
 .menu .fa {
-    font-size: 2vw;
+    font-size: 16px;
     color: black;
     
 }
@@ -277,6 +267,46 @@ nav ul a {
 }
 
 @media (max-width: 988px){
+    .intro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .audit {
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ui-one {
+        width: 250px;
+    }
+
+    .ui-two {
+        width: 250px;
+    }
+
+    .ux-student {
+        width: 300px;
+    }
+
+    .ux-teacher {
+        width: 300px;
+    }
+
+    .final {
+        width: 250px;
+    }
+
     /***** TEXT RESIZING *****/
     h2 {
         font-family: 'Trade Gothic LT Std', sans-serif;
@@ -286,15 +316,15 @@ nav ul a {
     }
 
     p {
-        font-size: 23px;
+        font-size: 18px;
     }
 
     .bullets {
-        width: 50%;
         text-align: left;
-        margin-left: 10vw;
-        margin-top: 6.5vw;
+        margin-left: 0px;
+        margin-top: 0px;
         line-height: 25px;
+        width: 100%;
     }
 
     .cite p{
@@ -302,7 +332,7 @@ nav ul a {
     }
 
     .moving-forward  li {
-        font-size: 23px;
+        font-size: 18px;
     }
 
     /***** HAMBURGER MENU *****/

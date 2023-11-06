@@ -14,7 +14,7 @@ body {
 h2 {
     font-family: 'Trade Gothic LT Std', sans-serif;
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 27px;
     margin-top: 3vw;
 }
 
@@ -23,7 +23,7 @@ h4 {
 }
 
 p {
-    font-size: 1.4vw;
+    font-size: 19px;
 }
 
 .intro {
@@ -134,12 +134,12 @@ footer {
 }
 
 .footer-text {
-    font-size: 1.2vw;
+    font-size: 13px;
     margin-left: 1vw;
 }
 
 .footer-text-2 {
-    font-size: 1.2vw;
+    font-size: 13px;
     margin-left: auto;
 }
 
@@ -153,11 +153,10 @@ footer {
 
 .menu a{
     margin-right: 1vw;
-    
 }
   
 .menu .fa {
-    font-size: 2vw;
+    font-size: 16px;
     color: black;
     
 }
@@ -295,6 +294,16 @@ nav ul a {
 }
 
 @media (max-width: 988px){
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        width: 100%;
+    }
+
     /***** TEXT RESIZING *****/
     h2 {
         font-family: 'Trade Gothic LT Std', sans-serif;
@@ -304,15 +313,15 @@ nav ul a {
     }
 
     p {
-        font-size: 23px;
+        font-size: 18px;
     }
 
     .bullets {
-        width: 50%;
         text-align: left;
-        margin-left: 10vw;
-        margin-top: 6.5vw;
+        margin-left: 0px;
+        margin-top: 0px;
         line-height: 25px;
+        width: 100%;
     }
 
     .cite p{
@@ -320,7 +329,20 @@ nav ul a {
     }
 
     .research-list {
-        font-size: 23px;
+        font-size: 18px;
+    }
+
+    .prototypes {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .prototypes img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
     }
 
     /***** HAMBURGER MENU *****/

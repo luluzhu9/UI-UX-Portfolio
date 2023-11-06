@@ -14,7 +14,7 @@ body {
 h2 {
     font-family: 'Trade Gothic LT Std', sans-serif;
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 28px;
     margin-top: 1vw;
 }
 
@@ -23,7 +23,7 @@ h4 {
 }
 
 p {
-    font-size: 1.4vw;
+    font-size: 20px;
 }
 
 .content {
@@ -112,12 +112,12 @@ footer {
 }
 
 .footer-text {
-    font-size: 1.2vw;
+    font-size: 13px;
     margin-left: 1vw;
 }
 
 .footer-text-2 {
-    font-size: 1.2vw;
+    font-size: 13px;
     margin-left: auto;
 }
 
@@ -135,7 +135,7 @@ footer {
 }
   
 .menu .fa {
-    font-size: 2vw;
+    font-size: 16px;
     color: black;
     
 }
@@ -225,12 +225,12 @@ nav ul a {
     h2 {
         font-family: 'Trade Gothic LT Std', sans-serif;
         font-weight: bold;
-        font-size: 33px;
+        font-size: 28px;
         margin-top: 3vw;
     }
 
     p {
-        font-size: 23px;
+        font-size: 20px;
     }
 
     /***** HAMBURGER MENU *****/
