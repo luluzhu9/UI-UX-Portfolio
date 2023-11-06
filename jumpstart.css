@@ -149,10 +149,11 @@ footer {
     list-style: none;
     margin-top: 1.5vw;
     margin-bottom: 1.5vw;
+    display: flex;
 }
 
 .menu a{
-    margin-right: 1vw;
+    margin-right: 2vw;
 }
   
 .menu .fa {
