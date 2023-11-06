@@ -44,7 +44,7 @@ p {
     text-align: left;
     margin-left: 10vw;
     margin-top: 6.5vw;
-    line-height: 1.5vw;
+    line-height: 25px;
 }
 
 .hero {
@@ -63,7 +63,7 @@ p {
 }
 
 .research-list {
-    font-size: 1.4vw;
+    font-size: 19px;
 }
 
 .pain-points {
