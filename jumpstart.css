@@ -43,7 +43,8 @@ p {
     width: 50%;
     text-align: left;
     margin-left: 10vw;
-    margin-top: 6.5vw;
+    /*margin-top: 6.5vw;*/
+    margin-top: 5vw;
     line-height: 25px;
 }
 
