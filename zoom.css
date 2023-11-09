@@ -14,12 +14,12 @@ body {
 h2 {
     font-family: 'Trade Gothic LT Std', sans-serif;
     font-weight: bold;
-    font-size: 27px;
+    font-size: 35px;
     margin-top: 3vw;
 }
 
 p {
-    font-size: 19px;
+    font-size: 22px;
 }
 
 .intro {
@@ -39,8 +39,7 @@ p {
     width: 50%;
     text-align: left;
     margin-left: 10vw;
-    /*margin-top: 6.5vw;*/
-    margin-top: 5vw;
+    margin-top: 100px;
     line-height: 25px;
 }
 
@@ -120,8 +119,7 @@ p {
 }
 
 .moving-forward  li {
-    /*font-size: 1.4vw;*/
-    font-size: 19px;
+    font-size: 22px;
 }
 
 /***** SIDEBAR *****/

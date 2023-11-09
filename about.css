@@ -18,7 +18,7 @@ h2 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .container {
@@ -45,7 +45,7 @@ p {
 }
 
 .hobbies {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .link {
@@ -54,11 +54,11 @@ p {
 }
 
 .link p{
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .link a{
-    font-size: 20px;
+    font-size: 22px;
     color: #ab91f1;
 }
 

@@ -14,16 +14,12 @@ body {
 h2 {
     font-family: 'Trade Gothic LT Std', sans-serif;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 35px;
     margin-top: 1vw;
 }
 
-h4 {
-    font-size: 1.5vw;
-}
-
 p {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .content {
