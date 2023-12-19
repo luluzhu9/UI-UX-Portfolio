@@ -50,6 +50,11 @@ p {
     margin-top: 5vw;
 }
 
+.trend-etc {
+    margin-top: 1vw;
+    filter: saturate(85%);
+}
+
 .row {
     display: flex;
     flex-direction: row;
